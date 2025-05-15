@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Sharma",
+    "email": "alice@example.com",
+    "course": "Mathematics",
+    "marks": [85, 90, 78, 92, 88]
+  },
+  {
+    "id": 2,
+    "name": "Ravi Kumar",
+    "email": "ravi@example.com",
+    "course": "Science",
+    "marks": [60, 58, 70, 66, 72]
+  },
+  {
+    "id": 3,
+    "name": "Priya Desai",
+    "email": "priya@example.com",
+    "course": "Mathematics",
+    "marks": [95, 93, 97, 99, 94]
+  },
+  {
+    "id": 4,
+    "name": "Aman Verma",
+    "email": "aman@example.com",
+    "course": "History",
+    "marks": [33, 40, 28, 35, 30]
+  },
+  {
+    "id": 5,
+    "name": "Sneha Gupta",
+    "email": "sneha@example.com",
+    "course": "Science",
+    "marks": [76, 81, 79, 84, 80]
+  },
+  {
+    "id": 6,
+    "name": "Vikram Singh",
+    "email": "vikram@example.com",
+    "course": "Mathematics",
+    "marks": [88, 84, 86, 90, 89]
+  },
+  {
+    "id": 7,
+    "name": "Neha Jain",
+    "email": "neha@example.com",
+    "course": "History",
+    "marks": [45, 50, 48, 52, 47]
+  },
+  {
+    "id": 8,
+    "name": "Kunal Mehta",
+    "email": "kunal@example.com",
+    "course": "Science",
+    "marks": [55, 59, 62, 60, 58]
+  },
+  {
+    "id": 9,
+    "name": "Deepika Reddy",
+    "email": "deepika@example.com",
+    "course": "History",
+    "marks": [89, 87, 90, 91, 88]
+  },
+  {
+    "id": 10,
+    "name": "Mohit Agarwal",
+    "email": "mohit@example.com",
+    "course": "Mathematics",
+    "marks": [36, 40, 39, 35, 38]
+  }
+]
