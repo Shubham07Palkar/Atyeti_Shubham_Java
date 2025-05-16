@@ -1,4 +1,4 @@
-package EmploeeSalaryManagement;
+package EmployeeSalaryManagement;
 
 public class Employee {
     private int id;

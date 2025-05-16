@@ -1,4 +1,4 @@
-package EmploeeSalaryManagement;
+package EmployeeSalaryManagement;
 
 import java.util.List;
 

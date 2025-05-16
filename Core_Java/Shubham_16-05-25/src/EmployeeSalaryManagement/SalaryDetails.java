@@ -1,4 +1,4 @@
-package EmploeeSalaryManagement;
+package EmployeeSalaryManagement;
 
 public class SalaryDetails {
     private double basesalary;
