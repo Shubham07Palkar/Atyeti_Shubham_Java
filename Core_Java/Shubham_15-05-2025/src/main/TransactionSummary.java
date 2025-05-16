@@ -1,3 +1,5 @@
+package main;
+
 public class TransactionSummary {
 
     public static void main(String[] args) {
