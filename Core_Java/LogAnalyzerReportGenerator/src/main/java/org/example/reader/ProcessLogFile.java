@@ -14,7 +14,6 @@ public class ProcessLogFile {
             try(BufferedReader reader = new BufferedReader(new FileReader(file))) {
                 String line;
                 while ((line = reader.readLine())!=null){
-
                 }
 
             } catch (FileNotFoundException e) {

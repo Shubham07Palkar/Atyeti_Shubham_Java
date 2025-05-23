@@ -1,0 +1,4 @@
+Emp :date=2025-05-01, employeeId=101, Name='John Doe', hoursWorked=8}
+Emp :date=2025-05-01, employeeId=102, Name='Jane Smith', hoursWorked=6}
+Emp :date=2025-05-02, employeeId=101, Name='John Doe', hoursWorked=7}
+Emp :date=2025-05-02, employeeId=102, Name='Jane Smith', hoursWorked=9}

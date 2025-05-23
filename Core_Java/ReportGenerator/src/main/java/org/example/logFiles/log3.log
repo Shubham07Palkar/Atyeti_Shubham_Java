@@ -1,0 +1,5 @@
+2025-05-20 10:02:55 WARNING  [InventoryService] - Low stock alert for product: SKU-1111
+2025-05-20 10:03:00 ERROR  [EmailService] - Failed to send email to user: janedoe@example.com
+2025-05-20 10:03:03 INFO  [NotificationService] - Push notification sent to user: johndoe
+2025-05-20 10:03:06 INFO  [InventoryService] - Reordered product: SKU-1111
+2025-05-20 10:03:09 ERROR  [DatabaseConnector] - Query execution failed: SQLSyntaxErrorException
