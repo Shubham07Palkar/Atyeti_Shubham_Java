@@ -26,11 +26,5 @@ class ProcessLogFileTest {
 
     }
 
-    @Test
-    void readAndAggregate() {
-    }
 
-    @Test
-    void getLogCountMap() {
-    }
 }
