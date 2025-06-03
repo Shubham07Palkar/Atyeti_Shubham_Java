@@ -20,7 +20,7 @@ public class ProcessLogFile {
 
 public void logProcessor(String fileDirectory){
     File folder = new File(fileDirectory);
-    File[] files = folder.listFiles((dir,name)-> name.endsWith(".log"));
+    File[] files = folder.listFiles((dir,name)-> name.endsWith(".log")||name.endsWith(".txt"));
     for (File file:files){
         executorService.submit(()-> readAndAggregate(String.valueOf(file)));
     }

@@ -11,11 +11,10 @@ public class Main {
         try {
             String dir = "log";
             String towriteFile = "log/CopiedLogs";
+            String zipDir = "ZipLogs.zip";
 
             DBManager manager = new DBManager();
             ProcessLogFile processLogFile = new ProcessLogFile();
-
-//          processLogFile.readAndAggregate(dir);
 
             processLogFile.logProcessor(dir);
             manager.logData(processLogFile.getLogCountMap());

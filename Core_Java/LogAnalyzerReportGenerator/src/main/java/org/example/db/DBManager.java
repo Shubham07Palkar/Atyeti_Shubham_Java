@@ -1,5 +1,4 @@
 package org.example.db;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -8,12 +7,19 @@ import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
+
 public class DBManager {
-    private static final String URL = "jdbc:mysql://localhost:3306/logAnalyzerDb";
-    private static final String USERNAME= "springstudent";
-    private static final String PASSWORD = "springstudent";
+    public static final String URL = "jdbc:mysql://localhost:3306/logAnalyzerDb";
+    public static final String USERNAME= "springstudent";
+    public static final String PASSWORD = "springstudent";
 
     public void logData(Map<String, AtomicInteger> logData) throws SQLException {
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         String query ="INSERT INTO logs_analyzer(timestamp, error_count, warn_count, info_count) VALUES (?,?,?,?)";
         Connection connection= DriverManager.getConnection(URL,USERNAME, PASSWORD);
         System.out.println("Connection Established");
