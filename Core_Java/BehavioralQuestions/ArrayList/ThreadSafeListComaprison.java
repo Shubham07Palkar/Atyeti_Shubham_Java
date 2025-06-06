@@ -1,4 +1,4 @@
-package com.Collections.BehavioralQuestions;
+package com.Collections.BehavioralQuestions.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Collections;
