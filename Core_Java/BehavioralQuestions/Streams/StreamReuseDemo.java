@@ -14,7 +14,7 @@ public class StreamReuseDemo {
 
         //Reusing terminal op. will throw exception
         nameStream.forEach(name -> System.out.println(name.toUpperCase()));
-//        |
+//
 
         //Trying to reuse it throws IllegalStateException.
     }
