@@ -1,7 +1,11 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
-public class PrefixSum {
+
+public class Solution{
+
     public static void calculatePrefix(int arr[]){
         int n= arr.length;
         int[] prefix = new int[n];
@@ -13,13 +17,6 @@ public class PrefixSum {
 
     }
 
-    public static void main(String[] args) {
-        int arr[] = {1, 4, 5, 6, 8, 9};
-        calculatePrefix(arr);
-    }
-}
-
-class Solution{
     public static int subarraysum(int[] nums, int k){
         Map<Integer, Integer> prefixMap = new HashMap<>();
         prefixMap.put(0, 1);
@@ -66,11 +63,32 @@ class Solution{
         return maxSum;
     }
 
+    static int lengthOfLongestSubstring(String s) {
+        Set<Character> set = new HashSet<>();
+        int left = 0, maxLen = 0;
+
+        for (int right = 0; right < s.length(); right++) {
+            while (set.contains(s.charAt(right))) {
+                set.remove(s.charAt(left++));
+            }
+            set.add(s.charAt(right));
+            maxLen = Math.max(maxLen, right - left + 1);
+        }
+
+        return maxLen;
+    }
+
+
+
+
     public static void main(String[] args) {
         int[] nums = {2, 6, 6, 7, 8};
+        String str1="aabccddeee";
         int k = 4;
 //        System.out.println(subarraysum(nums, k));
 //        System.out.println(removeDuplicates(nums));
-        System.out.println(slidingWindowSubArraySum(nums, k));
+//        System.out.println(slidingWindowSubArraySum(nums, k));
+//        calculatePrefix(nums);
+          System.out.println(lengthOfLongestSubstring(str1));
     }
 }
