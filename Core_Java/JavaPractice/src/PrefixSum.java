@@ -37,9 +37,40 @@ class Solution{
         return count;
     }
 
+
+    public static int removeDuplicates(int[] nums){
+        int i = 0;
+        for(int j=1;j<nums.length;j++){
+            if (nums[i]!=nums[j]){
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i;
+    }
+
+    public static int slidingWindowSubArraySum(int nums[], int k){
+        int windowSum =0;
+        int maxSum = 0;
+
+        for (int i =0 ; i< k; i++){
+            windowSum+=nums[i];
+        }
+
+        maxSum = windowSum;
+
+        for (int i=k; i<nums.length;i++){
+            windowSum += nums[i]-nums[i-k];
+            maxSum = Math.max(maxSum, windowSum);
+        }
+        return maxSum;
+    }
+
     public static void main(String[] args) {
-        int[] nums = {2, 4, 5, 6, 8};
-        int k = 6;
-        System.out.println(subarraysum(nums, k));
+        int[] nums = {2, 6, 6, 7, 8};
+        int k = 4;
+//        System.out.println(subarraysum(nums, k));
+//        System.out.println(removeDuplicates(nums));
+        System.out.println(slidingWindowSubArraySum(nums, k));
     }
 }
